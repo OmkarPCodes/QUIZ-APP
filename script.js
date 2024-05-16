@@ -1,7 +1,5 @@
 // Sign In Page code
 
-//Start
-
 let signupBtn = document.getElementById("signupBtn");
 let signinBtn = document.getElementById("signinBtn");
 let namefield = document.getElementById("namefield");
@@ -43,114 +41,16 @@ crosIcon.onclick=function(){
 }
 
 
-// Autocomplete search box code
-
-// Start
-
-// Initializes  input( name of skills) 
-        // with a typeahead 
-        var $input = $(".typeahead"); 
-        $input.typeahead({ 
-            source: [ 
-                "ChatGPT",
-                "Graphic Designing",
-                "Digital marketing",
-                "Video editing", 
-                "Machine learning",
-                "Cloud computing", 
-                "Introduction to SQL",
-                "Data analysis", 
-                "Introduction to  cyber security",
-                "Artificial Intelligence",
-                "Introduction to programming",
-            ], 
-            autoSelect: true, 
-        }); 
+// dropdown
+function toggleDropdown() {
+    document.getElementById("dropdownContent").classList.toggle("show");
+  }
   
-        $input.change(function () { 
-            var current = $input.typeahead("getActive"); 
-            matches = []; 
+  function selectCategory(category) {
+    // alert("Selected category: " + category);
+    // You can perform any action here based on the selected category
+  }
   
-            if (current) { 
-  
-                // Some item from your input matches 
-                // with entered data 
-                if (current.name == $input.val()) 
-                { 
-                    matches.push(current.name); 
-                } 
-            } 
-        });
-
-// End
-
-
-// Search box navigation code
-
-//start
-
-var searchBox=document.getElementById("inputBox");
-searchBox.addEventListener('keypress', (e) =>{
-
-if(e.key=='Enter')
-{
-    var val=searchBox.value;
-
-    if(val=='ChatGPT')
-    {
-        window.location.href = "chatGPT.html"; 
-    }
-    else if(val=='Graphic Designing')
-    {
-        window.location.href = "graphicDesigning.html";
-    }
-    else if(val=='Digital marketing')
-    {
-        window.location.href = "digitalMarketing.html";
-    }
-    else if(val=='Video editing')
-    {
-        window.location.href = "videoEditing.html";
-    }
-    else if(val=='Machine learning')
-    {
-        window.location.href = "machineLearning.html";
-    }
-    else if(val=='Cloud computing')
-    {
-        window.location.href = "cloudComputing.html";
-    }
-    else if(val=='Introduction to SQL')
-    {
-        window.location.href = "introductionToSQL.html";
-    }
-    else if(val=='Data analysis')
-    {
-        window.location.href = "dataAnalyst.html";
-    }
-    else if(val=='Introduction to  cyber security')
-    {
-        window.location.href = "cyberSecurity.html";
-    }
-    else if(val=='Artificial Intelligence')
-    {
-        window.location.href = "artificialIntelligence.html";
-    }
-    else if(val=='Introduction to programming')
-    {
-        window.location.href = "programming.html";
-    }
-
-}
-
-});
-
-//   add data bse 
-
-
-//end
-
-
 
 
 

@@ -138,12 +138,12 @@
             createUserWithEmailAndPassword(auth, email.value, "defaultPassword") // Use a placeholder password or add a password field
                 .then((credentials) => {
                     console.log(credentials);
-                    set(ref(db, 'users/' + credentials.user.uid), {
+                    set(ref(db, 'users_Login/' + credentials.user.uid), {
                         //  username: username.value,
                         email: email.value,
                         password: password.value
                     });
-                    alert(" Sigin  Successful!");
+                    alert(" Signup Successful!");
                 })
                 .catch((error) => {
                     alert(error.message);

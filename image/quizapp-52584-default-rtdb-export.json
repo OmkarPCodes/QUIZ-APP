@@ -1,0 +1,34 @@
+{
+  "Signinup": {
+    "omkar": {
+      "Email": "omkar@12",
+      "Password": "111111",
+      "Username": "omkar"
+    }
+  },
+  "login": {
+    "Email": "",
+    "Password": "",
+    "omkar@12": {
+      "Email": "omkar@12",
+      "Password": "111111"
+    }
+  },
+  "users": {
+    "c83eyYZY5SNvXCK0bXHqAC8wdWc2": {
+      "email": "shivam@123gmail.com",
+      "password": "887788",
+      "username": "shivam"
+    },
+    "rlHVmH40Cdc7PUdhLYBjsCyEbgC2": {
+      "email": "omkarpandagale545@gmail.com",
+      "password": "565656",
+      "username": "omkarpandagale5555"
+    },
+    "uucXcHVeHsdL5NHOzQTw0scrDZw2": {
+      "email": "bichkundevedant97@gmail.com",
+      "password": "123123",
+      "username": "shivaji_karhe_patil"
+    }
+  }
+}
